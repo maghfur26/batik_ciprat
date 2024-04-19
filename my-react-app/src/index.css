@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  box-sizing: border-box;
+}
+
+.line {
+  transition: 0.2s ease-in;
+}
+
+#nav-ul {
+  animation: navAnimated .4s ease-in-out;
+}
+
+.humberger-menu.active .line:nth-child(1) {
+  transition: 0.2s ease-in;
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+.humberger-menu.active .line:nth-child(2) {
+  transform: scale(0);
+  transition: 0.1s ease-in;
+}
+
+.humberger-menu.active .line:nth-child(3) {
+  transition: 0.2s ease-in;
+  transform: rotate(45deg);
+}
+
+.top_saller {
+  font-family: "ChrismasQueen";
+}
+
+.container-kelebihan {
+  font-family: "ChrismasQueen";
+}
+
+@keyframes navAnimated {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0;
+  }
+};
+
+
+@fontFace {
+  font-family: "queen";
+  src: url("../components/font_family/Queen.otf") format("opentype");
+}
+
+@fontFace {
+  font-family: "ChrismasQueen";
+  src: url("../components/font_family/ChrismasQueen.ttf") format("opentype");
+}
