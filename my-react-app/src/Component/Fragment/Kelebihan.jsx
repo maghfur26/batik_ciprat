@@ -2,7 +2,11 @@ import { ReactTyped } from "react-typed";
 
 export default function Kelebihan() {
   return (
+<<<<<<< HEAD
     <div className="container-kelebihan min-w-full w-full bg-cover h-fit my-14 shadow-md shadow-slate-500 rounded-sm" style={{ backgroundImage: "url('./public/image/batik-bg.jpg')" }}>
+=======
+    <div className="container-kelebihan min-w-full w-full bg-cover h-fit my-40 shadow-md shadow-slate-500 rounded-sm" style={{ backgroundImage: "url('./public/image/batik-bg.jpg')" }}>
+>>>>>>> cb937cb (add product)
       <div className="uppercase text-slate-300 pt-10 pb-5 px-8 font-Bebas tracking-[2px] text-3xl md:text-5xl md:px-10 opacity-65">
         <ReactTyped strings={["Batik ciprat", "Indonesia"]} typeSpeed={200} backSpeed={100} loop />
       </div>
