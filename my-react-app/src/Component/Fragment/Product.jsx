@@ -1,5 +1,7 @@
 import AreaCard from "../Element/card";
 
+const ListImage = ["https://source.unsplash.com/random/?shoes", "https://source.unsplash.com/random/?jacket", "https://source.unsplash.com/random/?woman-jacket", "https://source.unsplash.com/random/?bag", "https://source.unsplash.com/random/?man-bag", "https://source.unsplash.com/random/?t-shirt", "https://source.unsplash.com/random/?watch"];
+
 const Product = () => {
   return (
     <>
@@ -8,22 +10,11 @@ const Product = () => {
           Product
         </h1>
         <h5 className="text-xl text-center font-sans">Batik Ciprat</h5>
-        <div className="container w-dvw mx-auto mt-20 box-border flex justify-center">
-          <div className="flex gap-3 flex-wrap mx-5">
-            <AreaCard image={"https://source.unsplash.com/random/?shoes"} />
-            <AreaCard image={"https://source.unsplash.com/random/?jacket"} />
-            <AreaCard image={"https://source.unsplash.com/random/?woman-jacket"}/>
-            <AreaCard image={"https://source.unsplash.com/random/?bag"} />
-            <AreaCard image={"https://source.unsplash.com/random/?man-bag"} />
-            <AreaCard image={"https://source.unsplash.com/random/?t-shirt"} />
-            <AreaCard image={"https://source.unsplash.com/random/?watch"} />
-            <AreaCard image={"https://source.unsplash.com/random/?shoes"} />
-            <AreaCard image={"https://source.unsplash.com/random/?jacket"} />
-            <AreaCard image={"https://source.unsplash.com/random/?woman-jacket"}/>
-            <AreaCard image={"https://source.unsplash.com/random/?bag"} />
-            <AreaCard image={"https://source.unsplash.com/random/?man-bag"} />
-            <AreaCard image={"https://source.unsplash.com/random/?t-shirt"} />
-            <AreaCard image={"https://source.unsplash.com/random/?watch"} />
+        <div className="container py-5 max-w-full flex justify-center">
+          <div className="flex justify-center flex-wrap gap-4">
+            {ListImage.map((image) => (
+              <AreaCard image={image} />
+            ))}
           </div>
         </div>
       </div>

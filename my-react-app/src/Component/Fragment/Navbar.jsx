@@ -21,7 +21,7 @@ const Navbar = () => {
           <ListNav isActive={isActive} />
           <div id="shopping-cart" className="md:mr-10 relative">
             <Link to="#">
-              <img src="public/image/shopping-cart.png" alt="cart.img" />
+              <img src="/image/shopping-cart.png" alt="cart.img" />
               <div className="count text-[10px] absolute top-[-10px] right-[-10px] bg-orange-600 text-white rounded-full w-4 h-4 flex items-center justify-center">{count}</div>
             </Link>
           </div>
